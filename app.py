@@ -69,7 +69,7 @@ st.write("---")
 products = [
     {"nama": "Template Kerangka Skripsi Umum", "harga": "Rp 5.000", "desc": "Kerangka Skripsi Umum di Indonesia", "gambar": "https://via.placeholder.com/300x300.png?text=Template+Umum"},
     {"nama": "Buat Judul", "harga": "Rp 5.000", "desc": "Kami Bantu buatkan Judul Skripsi", "gambar": "https://via.placeholder.com/300x300.png?text=Bantu+Judul"},
-    {"nama": "Template Kerangka Sesuai Univ", "harga": "Rp 15.000", "desc": "Sesuai Pedoman Prodi & Kampusmu.", "gambar": "https://i.postimg.cc/x8RzhTCb/Picture1.png"},
+    {"nama": "Template Kerangka Sesuai Univ", "harga": "Rp 15.000", "desc": "Sesuai Pedoman Prodi & Kampusmu.", "gambar": "https://i.postimg.cc/x8RzhTCb/Picture1/300x300.png"},
     {"nama": "Cari Ide Penelitian", "harga": "Rp 25.000", "desc": "Kami bantu cari ide penelitianmu.", "gambar": "https://via.placeholder.com/300x300.png?text=Ide+Penelitian"}
 ]
 
@@ -98,4 +98,5 @@ for i, p in enumerate(products):
 
 # --- FOOTER ---
 st.caption("© 2026 Template Kerangka Skripsiku")
+
 
