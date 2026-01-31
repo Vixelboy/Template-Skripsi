@@ -101,16 +101,21 @@ for i, p in enumerate(products):
         st.write(f"### {p['harga']}")
         st.write(p["desc"])
         
-        # Tombol Beli - Pastikan menjorok ke dalam 'with' dan 'for'
-        if st.button(f"Beli {p['nama']}", key=f"btn_{i}"):
-            wa_link = f"https://wa.me/628131709665?text=Halo%20Admin%20dosbing.ai,%20saya%20ingin%20beli%20{p['nama']}"
-            # Perbaikan: Pakai unsafe_allow_html
-            st.markdown(f'<meta http-equiv="refresh" content="0;URL=\'{wa_link}\'" />', unsafe_allow_html=True)
+       # Link WA Langsung (Anti Error 'Refused to Connect')
+        wa_url = f"https://wa.me/628131709665?text=Halo%20Admin%20dosbing.ai,%20saya%20mau%20beli%20{p['nama']}"
         
+        st.markdown(f'''
+            <a href="{wa_url}" target="_blank" style="text-decoration: none;">
+                <div style="background-color: #ff4b4b; color: white; padding: 10px; text-align: center; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                    Beli {p['nama']}
+                </div>
+            </a>
+        ''', unsafe_allow_html=True)
         st.write("---")
 # --- FOOTER ---
 
 st.caption("© 2026 Template Kerangka Skripsiku")
+
 
 
 
