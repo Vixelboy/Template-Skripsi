@@ -102,13 +102,18 @@ for i, p in enumerate(products):
         if st.button(f"Beli {p['nama']}", key=i):
             st.success(f"Mengarahkan ke WhatsApp untuk {p['nama']}...")
             # Link WA otomatis sesuai nama produk
-            wa_link = f"https://wa.me/628131709665?text=Halo%20Admin,%20saya%20ingin%20beli%20{p['nama']}"
-            st.markdown(f'<meta http-equiv="refresh" content="0;URL=\'{wa.me/628131709665}\'" />', unsafe_allow_index=True)
+          if st.button(f"Beli {p['nama']}", key=i):
+            # Link WA dengan nomor kamu dan pesan otomatis sesuai nama produk
+            wa_link = f"https://wa.me/628131709665?text=Halo%20Admin%20dosbing.ai,%20saya%20ingin%20beli%20{p['nama']}"
+            
+            # Gunakan st.markdown dengan parameter yang benar: unsafe_allow_html
+            st.markdown(f'<meta http-equiv="refresh" content="0;URL=\'{wa_link}\'" />', unsafe_allow_html=True)
         st.write("---")
 
 # --- FOOTER ---
 
 st.caption("© 2026 Template Kerangka Skripsiku")
+
 
 
 
