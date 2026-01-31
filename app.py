@@ -91,7 +91,8 @@ products = [
     }
 ]
 
-cols = st.columns(2) # Membuat 2 kolom seperti tampilan Lazada/e-commerce mobile
+# --- DISPLAY PRODUK DALAM GRID ---
+cols = st.columns(2) 
 
 for i, p in enumerate(products):
     with cols[i % 2]:
@@ -99,20 +100,18 @@ for i, p in enumerate(products):
         st.subheader(p["nama"])
         st.write(f"### {p['harga']}")
         st.write(p["desc"])
-        if st.button(f"Beli {p['nama']}", key=i):
-            st.success(f"Mengarahkan ke WhatsApp untuk {p['nama']}...")
-            # Link WA otomatis sesuai nama produk
-          if st.button(f"Beli {p['nama']}", key=i):
-            # Link WA dengan nomor kamu dan pesan otomatis sesuai nama produk
+        
+        # Tombol Beli - Pastikan menjorok ke dalam 'with' dan 'for'
+        if st.button(f"Beli {p['nama']}", key=f"btn_{i}"):
             wa_link = f"https://wa.me/628131709665?text=Halo%20Admin%20dosbing.ai,%20saya%20ingin%20beli%20{p['nama']}"
-            
-            # Gunakan st.markdown dengan parameter yang benar: unsafe_allow_html
+            # Perbaikan: Pakai unsafe_allow_html
             st.markdown(f'<meta http-equiv="refresh" content="0;URL=\'{wa_link}\'" />', unsafe_allow_html=True)
+        
         st.write("---")
-
 # --- FOOTER ---
 
 st.caption("© 2026 Template Kerangka Skripsiku")
+
 
 
 
