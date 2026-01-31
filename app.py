@@ -67,10 +67,10 @@ st.write("---")
 
 # --- DATA PRODUK ---
 products = [
-    {"nama": "Template Kerangka Skripsi Umum", "harga": "Rp 5.000", "desc": "Kerangka Skripsi Umum di Indonesia", "gambar": "https://via.placeholder.com/300x300.png?text=Template+Umum"},
-    {"nama": "Buat Judul", "harga": "Rp 5.000", "desc": "Kami Bantu buatkan Judul Skripsi", "gambar": "https://via.placeholder.com/300x300.png?text=Bantu+Judul"},
-    {"nama": "Template Kerangka Sesuai Univ", "harga": "Rp 15.000", "desc": "Sesuai Pedoman Prodi & Kampusmu.", "gambar": "https://i.postimg.cc/x8RzhTCb/Picture1/300x300.png"},
-    {"nama": "Cari Ide Penelitian", "harga": "Rp 25.000", "desc": "Kami bantu cari ide penelitianmu.", "gambar": "https://via.placeholder.com/300x300.png?text=Ide+Penelitian"}
+    {"nama": "Template Kerangka Skripsi Umum", "harga": "Rp 5.000", "desc": "Kerangka Skripsi Umum di Indonesia", "gambar": "https://i.postimg.cc/YSKCNB2w/Gemini_Generated_Image_gfpzjvgfpzjvgfpz.png"},
+    {"nama": "Buat Judul", "harga": "Rp 5.000", "desc": "Kami Bantu buatkan Judul Skripsi", "gambar": "https://i.postimg.cc/3w5xjQrK/Gemini_Generated_Image_akbwy9akbwy9akbw.png"},
+    {"nama": "Template Kerangka Sesuai Univ", "harga": "Rp 15.000", "desc": "Sesuai Pedoman Prodi & Kampusmu.", "gambar": "https://i.postimg.cc/0NRyG155/Gemini_Generated_Image_60q15u60q15u60q1.png"},
+    {"nama": "Cari Ide Penelitian", "harga": "Rp 25.000", "desc": "Kami bantu cari ide penelitianmu.", "gambar": "https://i.postimg.cc/CKTxCpMh/Gemini_Generated_Image_jwhb1ejwhb1ejwhb.png"}
 ]
 
 # --- DISPLAY PRODUK ---
@@ -98,5 +98,6 @@ for i, p in enumerate(products):
 
 # --- FOOTER ---
 st.caption("© 2026 Template Kerangka Skripsiku")
+
 
 
