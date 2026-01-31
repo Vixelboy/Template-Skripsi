@@ -47,7 +47,7 @@ st.markdown("""
     <a href="https://wa.me/6281234567890?text=Halo%20Admin%20dosbing.ai,%20saya%20tertarik%20dengan%20produknya" class="float-wa" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
     </a>
-""", unsafe_allow_index=True)
+""", unsafe_allow_html=True) # Ganti unsafe_allow_index menjadi unsafe_allow_html
 
 # --- HEADER ---
 st.title("🎓 dosbing.ai")
@@ -110,4 +110,5 @@ for i, p in enumerate(products):
         st.write("---")
 
 # --- FOOTER ---
+
 st.caption("© 2026 dosbing.ai | Vixelboy Digital Product")
